@@ -4,13 +4,19 @@
 
 {% block content %}
 <div class="form-container">
+
+    {% if error : %}
+    <div class="error-container">
+        <h3 class="error-tag">{{ error_msg }}</h3>
+    </div>
+    {% endif %}
     <form action="#" method="post">
         <div class="token-container">
-            <label for="token">Login</label><br>
+            <label for="token">API Token</label><br>
             <input type="text" class="form-control" name="token" id="token" aria-describedby="token" placeholder="Bearer Token">
         </div>
         <div class="player_uuid-container">
-            <label for="player_uuid">Password</label><br>
+            <label for="player_uuid">Player Tag</label><br>
             <input type="text" class="form-control" id="player_uuid" name="player_uuid" placeholder="#PlayerTag">
         </div>
         <div class="btn-container">
