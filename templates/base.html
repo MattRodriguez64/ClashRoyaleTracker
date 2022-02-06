@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Title{% endblock %}</title>
+    <link href="../static/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../static/css/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Clash Royale Tracker</h1>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    {% block graph %}{% endblock %}
+
+    {% block indicators %}{% endblock %}
+
+    {% block data %}{% endblock %}
+
+    <footer class="footer">
+        <div>
+            © 2022 Copyright:
+	        <a class="footer-copyright" href="https://github.com/MattRodriguez64">Matt RODRIGUEZ</a>
+        </div>
+    </footer>
+</body>
+</html>
